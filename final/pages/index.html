@@ -11,9 +11,63 @@
 <body>
     <!-- header -->
     <section>
-        <div class="p-8 flex justify-between bg-amber-100">
-            <!-- right section -->
-            <ul class="flex">
+        <div class="p-6 flex justify-around  bg-green-100 items-center">
+            <!-- mobile -->
+            <div>
+                <button id="menuButton" class="bg-green-200 px-4 py-2 lg:hidden">☰</button>
+                <ul id="dropdownMenu" class="hidden absolute bg-amber-100 p-5">
+                    <a href="/">
+                        <li class="flex p-4 gap-2.5 bg-amber-100 border-b">
+                            <span>🏠</span>
+                            <p>خانه</p>
+                        </li>
+                    </a>
+                    <a href="/search">
+                        <li class="flex p-4 gap-2.5 bg-amber-100 border-b">
+                            <span>🔍</span>
+                            <p>جستجوی مشاغل</p>
+                        </li>
+                    </a>
+                    <a href="/resume-builder">
+                        <li class="flex p-4 gap-2.5 bg-amber-100 border-b">
+                            <span>✨</span>
+                            <p>رزومه ساز</p>
+                        </li>
+                    </a>
+                    <a href="/top-companies">
+                        <li class="flex p-4 gap-2.5 bg-amber-100 border-b">
+                            <span>💎</span>
+                            <p>۵۰ شرکت برتر</p>
+                        </li>
+                    </a>
+                    <a href="/employer">
+                        <li class="flex p-4 gap-2.5 bg-amber-100">
+                            <span>🏢</span>
+                            <p>بخش کارفرمایان</p>
+                        </li>
+                    </a>
+                </ul>    
+                <a href="/search">
+                    <span class="lg:hidden">🔍</span>
+                </a>            
+            </div>
+            <div class="lg:hidden">jobinja</div>
+            <div class="lg:hidden">
+                <a href="/notifications">
+                    <span class="mx-1">🔔</span>
+                </a>
+                <span id="btn" class="mx-1">👤</span>
+                    <ul id="listButton" class=" hidden absolute lg:hidden bg-amber-100 ">
+                        <a href="/sign-up">
+                            <li>ثبت نام کارجو</li>
+                        </a>
+                        <a href="/sing-in">
+                            <li>ورود کارجو</li>
+                        </a>
+                    </ul>
+            </div>
+            <!-- laptop -->
+            <ul class="hidden lg:flex">
                 <a href="/">
                     <li class="flex p-4 gap-2.5">
                         <span>🏠</span>
@@ -45,8 +99,102 @@
                     </li>
                 </a>
             </ul>
+            <ul class="hidden lg:flex">
+                <a href="/notifications">
+                    <li class="flex p-4 gap-2.5">
+                        <span>🔔</span>
+                    </li>
+                </a>
+                <a href="/sign-up">
+                    <li class="flex p-4 gap-2.5">
+                        <span>👤</span>
+                        <p>ثبت نام کارجو</p>
+                    </li>
+                </a>
+                <a href="/sing-in">
+                    <li class="flex p-4 gap-2.5">
+                        <span>➡️</span>
+                        <p>ورود کارجو</p>
+                    </li>
+                </a>
+                <a href="/">
+                    <li class="flex p-4 gap-2.5 border-r">
+                        <p>jobinja</p>
+                    </li>
+                </a>
+            </ul>
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- right section -->
+             <!-- <div class="p-2">
+                <button id="menuButton" class="bg-green-200 px-4 py-2">☰</button> -->
+                <!-- <ul id="dropdownMenu" class="lg:flex">
+                    <a href="/">
+                        <li class="flex p-4 gap-2.5">
+                            <span>🏠</span>
+                            <p>خانه</p>
+                        </li>
+                    </a>
+                    <a href="/search">
+                        <li class="flex p-4 gap-2.5">
+                            <span>🔍</span>
+                            <p>جستجوی مشاغل</p>
+                        </li>
+                    </a>
+                    <a href="/resume-builder">
+                        <li class="flex p-4 gap-2.5">
+                            <span>✨</span>
+                            <p>رزومه ساز</p>
+                        </li>
+                    </a>
+                    <a href="/top-companies">
+                        <li class="flex p-4 gap-2.5">
+                            <span>💎</span>
+                            <p>۵۰ شرکت برتر</p>
+                        </li>
+                    </a>
+                    <a href="/employer">
+                        <li class="flex p-4 gap-2.5">
+                            <span>🏢</span>
+                            <p>بخش کارفرمایان</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div>
+                <p class="text-4xl font-bold">jobinja</p>
+            </div>
+            <div class="flex px-4 py-2 gap-10">
+                <div class="">
+                    <span class="mx-1">🔔</span>
+                    <span class="mx-1">👤</span>
+                </div>
+            </div> -->
             <!-- left section -->
-                <ul class="flex">
+                <!-- <ul class="hidden lg:flex">
                     <a href="/notifications">
                         <li class="flex p-4 gap-2.5">
                             <span>🔔</span>
@@ -69,8 +217,26 @@
                             <p>jobinja</p>
                         </li>
                     </a>
-                </ul>
+                </ul> -->
         </div>
     </section>
+    <!-- blog section -->
+     <section>
+        <div class="bg-red-500 border-b mx-8 flex justify-between items-end">
+            <h2 class="pt-4">از وبلاگ جابینجا</h2>
+            <button>مشاهده همه</button>
+        </div>
+        <div>
+            <div>
+                <img src="/final/public/https___blog.jobinja.ir_wp-content_uploads_2024_10_نقش-منابع-انسانی-در-توسعه-سازمان.webp" alt="">
+                <h2>بررسی نقش منابع انسانی در توسعه سازمان</h2>
+                <p class=""> نقش منابع انسانی در توسعه سازمان بر کسی پوشیده نیست. سازمان‌هایی رشد می‌کنند و به موفقیت می‌رسند که سرمایه‌های انسانی مناسبی در اختیار داشته باشند. در مدیریت منابع انسانی (HRM) تلاش می‌شود با ایجاد خط‌مشی‌ها و رویه‌هایی، از پرسنل سازمانی حمایت شود. نیازسنجی، آموزش و توسعه، برنامه‌ریزی شغلی و ارزیابی... </p>
+                <button>مشاهده بیشتر</button>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+     </section>
 </body>
+<script src="/final//pages/index.js"></script>
 </html>

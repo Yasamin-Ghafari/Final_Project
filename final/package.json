@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch" : " npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/stylesheet.css --watch\n"
+    "watch" : " npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/stylesheet.css --watch",
+    "start": "npm run watch"
   },
   "author": "",
   "license": "ISC",
